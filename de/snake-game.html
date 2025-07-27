@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent mt-4 mb-4">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link font-jura fw-semibold seperate-line" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-jura fw-semibold seperate-line" href="./resume.html">Lebenslauf</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-jura fw-semibold seperate-line" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projekte
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item font-jura fw-semibold"
+                                    href="./network-project.html">Netzwerkprojekt</a></li>
+                            <li><a class="dropdown-item font-jura fw-semibold" href="./snake-game.html">Snake Game</a>
+                            </li>
+                            <li><a class="dropdown-item font-jura fw-semibold" href="./dice-game.html">Würfelspiel</a>
+                            </li>
+                            <li><a class="dropdown-item font-jura fw-semibold"
+                                    href="https://gitlab.com/one-touch-pipeline/weskit/bih/weskit-showcase-2026"
+                                    target="_blank">WESkit</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-jura fw-semibold seperate-line"
+                            href="mailto:tech.career@icloud.com">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-jura fw-semibold seperate-line" target="_blank"
+                            href="https://github.com/dev-showroom/application-website">Quellcode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-jura fw-semibold seperate-line border-0"
+                            href="../en/snake-game.html">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex flex-column align-items-center">
+        <h1 class="col-8 col-md-12 mx-auto text-center">The Famous Snake Game</h1>
+        <p class="font-jura col-10 col-md-5 text-center mt-2">Das ikonische und beliebte Spiel ‘Snake’, das auf den
+            ersten Nokia-Handys zu finden war,
+            habe ich hier in Python nachgebaut.</p>
+        <h2 class="fw-medium mb-3 fs-1">DEMO</h2>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <video width="500px" height="525px" controls>
+                <source src="../images/snake/demo.mov">
+            </video>
+            <h2 class="fw-medium mb-3 fs-1 mt-4">Spielregeln</h2>
+            <p class="font-jura col-6 text-center">
+                Der Spieler steuert die Schlange mit den Pfeiltasten.
+                Das Ziel des Spiels ist es, mit der Schlange Nahrung zu fressen und sie dabei wachsen zu lassen.
+                Je mehr Nahrung die Schlange frisst, desto höher wird die Punktzahl.
+                Kollidiert sie dabei mit den Wänden oder sich selbst, endet das Spiel.
+            </p>
+            <a class="snake-source-code-button btn btn-outline-light font-jura text-decoration-none mt-2 mb-4"
+                href="https://github.com/dev-showroom/the-famous-snake-game.git" target="_blank">Quellcode</a>
+        </div>
+    </div>
+
+    <footer>
+        <p class="font-jura text-center fs-6 mb-4 mt-4">© 2025 Florian Boese. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
