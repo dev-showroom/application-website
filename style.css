@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Jura';
-    src: url(./fonts/jura/Jura-VariableFont_wght.ttf);
+    src: url(./fonts/inter/Inter-VariableFont_opsz\,wght.ttf);
 }
 
 @font-face {
     font-family: 'Shrikhand';
-    src: url(./fonts/shrikhand/Shrikhand-Regular.ttf);
+    src: url(./fonts/montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 html,
@@ -18,7 +18,7 @@ body {
 
 body {
     flex: 1;
-    background-image: linear-gradient(to bottom, #609966, #79AC78, #9DC08B);
+    background-image: linear-gradient(to bottom, #020617, #0F172A, #1E293B);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -27,7 +27,7 @@ h1,
 h2 {
     font-size: clamp(1rem, 10vw, 5rem);
     font-family: "Shrikhand", sans-serif;
-    color: #EDF1D6;
+    color: #E5E7EB;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
@@ -40,23 +40,23 @@ h2 {
     font-size: clamp(2rem, 10vw, 3rem);
 }
 
-.font-jura,
+.font-inter,
 h3,
 h4 {
     font-family: "Jura", serif;
     font-size: clamp(1rem, 3vw, 1.3rem);
     font-weight: 100;
-    color: #EDF1D6;
+    color: #E5E7EB;
 }
 
 .img-head {
-    width: 500px;
+    width: 510px;
 }
 
 .img-profile {
     width: 335px;
     max-width: 100%;
-    border: solid 1px #EDF1D6;
+    border: solid 1px #E5E7EB;
     border-radius: 50%;
     margin-top: 1.3rem;
 }
@@ -69,7 +69,7 @@ h4 {
 .img-network-structure,
 .img-network-layout {
     border-radius: 3%;
-    border: solid #EDF1D6 5px;
+    border: solid #E5E7EB 5px;
 }
 
 .dropdown-toggle::after {
@@ -77,15 +77,15 @@ h4 {
 }
 
 .dropdown-menu {
-    background-color: #70a572;
+    background-color: #020617;
     border-color: transparent;
-    color: #EDF1D6;
+    color: #E5E7EB;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: #EDF1D6;
-    color: black;
+    background-color: #E5E7EB;
+    color: #020617;
 }
 
 .seperate-line {
@@ -110,22 +110,22 @@ h4 {
 
 tr,
 td {
-    border: 2px solid #EDF1D6;
+    border: 2px solid #E5E7EB;
 }
 
 #playButton,
 .snake-source-code-button {
     width: 100%;
     max-width: 12rem;
-    color: black;
-    background-color: #EDF1D6;
+    color: #020617;
+    background-color: #E5E7EB;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #playButton:hover,
 .snake-source-code-button:hover {
-    color: #EDF1D6;
-    background-color: #9DC08B;
+    color: #E5E7EB;
+    background-color: #020617;
     transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -137,7 +137,7 @@ td {
 }
 
 .border-b {
-    border-bottom: solid 1px #EDF1D6;
+    border-bottom: solid 1px #E5E7EB;
 }
 
 footer {
@@ -145,7 +145,7 @@ footer {
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #EDF1D6;
+    background-color: #E5E7EB;
     color: #000 !important;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -178,7 +178,7 @@ footer {
 
 @media (min-width: 768px) {
     .seperate-line {
-        border-right: solid 2px #EDF1D6;
+        border-right: solid 2px #E5E7EB;
         padding: 0px;
     }
 }
@@ -200,7 +200,7 @@ footer {
         transform: none;
         width: 90%;
         max-width: 400px;
-        background-color: rgba(112, 165, 114, 0.95);
+        background-color: rgba(2, 6, 23, 0.97);
         z-index: 999;
     }
 
@@ -208,4 +208,18 @@ footer {
         position: relative;
         z-index: 1000;
     }
+}
+
+.index-img-parent {
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    width: 60%;
+    top: 61%;
+    left: 66.5%;
+    transform: translate(-50%, -50%);
+    color: #020617;
+    font-size: 1.2rem;
 }
