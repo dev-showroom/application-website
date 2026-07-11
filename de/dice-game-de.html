@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dice game</title>
+  <title>Würfelspiel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
@@ -21,21 +21,21 @@
       <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link font-inter fw-semibold seperate-line" href="./index.html">Home</a>
+            <a class="nav-link font-inter fw-semibold seperate-line" href="./landing-page-de.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-inter fw-semibold seperate-line" href="./resume.html">Resume</a>
+            <a class="nav-link font-inter fw-semibold seperate-line" href="./resume-de.html">Lebenslauf</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle font-inter fw-semibold seperate-line" href="#" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
+              Projekte
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item font-inter fw-semibold" href="./network-project.html">Network project</a></li>
-              <li><a class="dropdown-item font-inter fw-semibold" href="./snake-game.html">Snake Game</a>
+              <li><a class="dropdown-item font-inter fw-semibold" href="./network-project-de.html">Netzwerkprojekt</a></li>
+              <li><a class="dropdown-item font-inter fw-semibold" href="./snake-game-de.html">Snake Game</a>
               </li>
-              <li><a class="dropdown-item font-inter fw-semibold" href="./dice-game.html">Dice game</a>
+              <li><a class="dropdown-item font-inter fw-semibold" href="./dice-game-de.html">Würfelspiel</a>
               </li>
               <li><a class="dropdown-item font-inter fw-semibold"
                   href="https://gitlab.com/one-touch-pipeline/weskit/bih/weskit-showcase-2026/-/commits/master?author=Florian%20Boese"
@@ -44,14 +44,14 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-inter fw-semibold seperate-line" href="mailto:tech.career@icloud.com">Contact</a>
+            <a class="nav-link font-inter fw-semibold seperate-line" href="mailto:tech.career@icloud.com">Kontakt</a>
           </li>
           <li class="nav-item">
             <a class="nav-link font-inter fw-semibold seperate-line" target="_blank"
-              href="https://github.com/dev-showroom/application-website">Source code</a>
+              href="https://github.com/dev-showroom/application-website">Quellcode</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-inter fw-semibold seperate-line border-0" href="../de/dice-game.html">Deutsch</a>
+            <a class="nav-link font-inter fw-semibold seperate-line border-0" href="../en/dice-game-en.html">English</a>
           </li>
         </ul>
       </div>
@@ -59,10 +59,10 @@
   </nav>
 
   <div class="d-flex flex-column align-items-center text-center w-75 mx-auto mt-4">
-    <h1 class="dice-game w-sm-100">Dice game</h1>
+    <h1 class="dice-game w-sm-100">Würfelspiel</h1>
     <div class="d-sm-flex flex-column flex-sm-row gap-5">
       <div class="mt-4">
-        <p class="font-inter">Player</p>
+        <p class="font-inter">Spieler</p>
         <img class="dice-img1" src="../images/dice-game/dice6.png" />
       </div>
 
@@ -74,25 +74,32 @@
     <button class="btn btn-outline-light font-inter mt-5" id="playButton">Start</button>
   </div>
 
-  <div class="col-10 col-md-6 mx-auto text-center mt-5">
-    <h2 class="fw-medium fs-1">How does the game work?</h2>
+  <div class="col-10 col-md-5 mx-auto text-center mt-5">
+    <h2 class="fw-medium fs-1">Wie funktioniert das Spiel?</h2>
     <p class="font-inter mb-5">
-      Click on the start button to throw two dice - one for you and one for the computer.
-      Whoever rolls the higher number wins. If the numbers are the same, there is a draw.
+      Klicke auf den Start-Button, um zwei Würfel zu werfen – einer für dich und einer für den Computer.
+      Wer die höhere Zahl würfelt, gewinnt. Bei gleichen Zahlen gibt es ein Unentschieden.
     </p>
-    <h2 class="fw-medium fs-1">How are the numbers generated?</h2>
+    <h2 class="fw-medium fs-1">Wie werden die Zahlen bestimmt?</h2>
     <p class="font-inter mb-5">
-      The dice numbers appear random, but in fact they are not. Computers cannot generate true randomness,
-      but use algorithms to calculate seemingly random numbers. This method is sufficient for games,
-      but is not completely unpredictable.
+      Die Würfelzahlen wirken zufällig, sind es aber tatsächlich nicht. Computer können keine echte Zufälligkeit
+      erzeugen,
+      sondern nutzen Algorithmen, um scheinbar zufällige Zahlen zu berechnen. Diese Methode reicht für Spiele aus,
+      ist aber nicht völlig unvorhersehbar.
     </p>
   </div>
 
   <footer>
-    <p class="font-inter text-center fs-6 mb-4 mt-4">© 2026 Florian Boese. All rights reserved.</p>
+      <p class="font-inter text-center fs-6 mb-4 mt-4">
+          © <span id="current-year"></span> Florian Boese. Alle Rechts vorbehalten.
+      </p>
+
+      <script>
+          document.querySelector("#current-year").textContent = new Date().getFullYear();
+      </script>
   </footer>
 
-  <script src="../src/dice-game-en.js" charset="utf-8"></script>
+  <script src="../src/dice-game.js" charset="utf-8"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
