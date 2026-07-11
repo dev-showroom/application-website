@@ -153,7 +153,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-
     .img-network-structure,
     .img-network-layout {
         width: 350px;
@@ -168,7 +167,6 @@ footer {
 }
 
 @media (min-width: 577px) and (max-width: 1200px) {
-
     .img-network-structure,
     .img-network-layout {
         width: 450px;
@@ -184,7 +182,6 @@ footer {
 }
 
 @media (min-width: 1201px) {
-
     .img-network-structure,
     .img-network-layout {
         width: 600px;
@@ -202,11 +199,6 @@ footer {
         max-width: 400px;
         background-color: rgba(2, 6, 23, 0.97);
         z-index: 999;
-    }
-
-    .navbar {
-        position: relative;
-        z-index: 1000;
     }
 }
 
